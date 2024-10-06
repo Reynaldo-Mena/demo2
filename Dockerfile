@@ -10,7 +10,7 @@ FROM tomcat:8.0-alpine
 #FROM openjdk:11-jre-slim
 
 # Copy the built JAR file from the Maven build container
-COPY --from=build /app/target/demo2-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/demo2-1.0-SNAPSHOT.war
+ADD /app/target/demo2-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/demo2-1.0-SNAPSHOT.war
 
 # Expose the port your application will run on
 EXPOSE 8080
