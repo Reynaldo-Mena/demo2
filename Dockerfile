@@ -20,4 +20,4 @@ COPY --from=build /app/target/demo2-1.0-SNAPSHOT.jar /app/demo2-1.0-SNAPSHOT.jar
 EXPOSE 8080
 
 # Define the command to run your app
-ENTRYPOINT ["java", "-jar", "/app/ToDoMidTerm-1.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/app/demo2-1.0-SNAPSHOT.jar"]
