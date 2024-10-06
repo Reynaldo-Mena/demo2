@@ -20,9 +20,9 @@ FROM tomcat:8.0-alpine
 #RUN mvn clean package -Dmaven.test.skip=true
 # Second stage: use a lighter image to run the application
 #FROM openjdk:11-jre-slim
-
+RUN mkdir /usr/local/tomcat/webapps/todolist
 # Copy the built JAR file from the Maven build container
-COPY --from=build /app/target/demo2-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/demo2-1.0-SNAPSHOT.war
+COPY --from=build /app/target/demo2-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/todolist/demo2-1.0-SNAPSHOT.war
 
 # Expose the port your application will run on
 EXPOSE 8080
