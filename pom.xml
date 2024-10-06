@@ -8,7 +8,7 @@
     <artifactId>demo2</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>demo2</name>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
 
     <properties>
