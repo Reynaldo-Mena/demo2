@@ -42,7 +42,7 @@ public class Main {
         System.out.println("2. Delete a to-do item ");
         System.out.println("3. View to-do items ");
         System.out.println("4. Exit ");
-        System.out.print("Enter your choice: ");
+        System.out.print("Enter your choice:  ");
     }
 
     private static void addItem(Scanner scanner) {
